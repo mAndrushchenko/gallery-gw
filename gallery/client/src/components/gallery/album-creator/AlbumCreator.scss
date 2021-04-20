@@ -1,0 +1,28 @@
+@import "../../../index";
+
+.album_creator__container {
+  font-size: 20px;
+  background-color: $Colour-CC-3-rgba !important;
+  box-shadow: 1px 1px 30px $Colour-CC-1-rgba;
+  border-radius: 5px;
+  padding: 20px;
+  color: $white;
+  position: fixed;
+  max-width: 400px;
+  max-height: 400px;
+  left: calc(50% - 130px);
+  top: calc(50% - 200px);
+}
+
+.album_creator__btn_group {
+  width: 100%;
+  text-align: center;
+
+  & button:first-child {
+    margin-right: 20px;
+  }
+
+  & button {
+    font-size: 20px;
+  }
+}

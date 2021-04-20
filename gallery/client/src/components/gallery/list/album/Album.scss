@@ -1,0 +1,52 @@
+@import "../../../../index";
+
+.album__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 250px;
+  max-width: 400px;
+  position: relative;
+  cursor: pointer;
+
+  & img {
+    max-height: 80%;
+    max-width: 80%;
+  }
+
+  & .album__name {
+    color: $white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 20px;
+    max-width: 240px;
+    text-align: left;
+    font-weight: bold;
+    position: absolute;
+    top: 38%;
+    left: 17%;
+  }
+
+  & .album__info {
+    font-style: italic;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+
+}
+
+.album__btn__delete {
+  visibility: hidden;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.album__container:hover {
+  box-shadow: 2px 4px 10px $Colour-CC-1-rgba;
+  transform: scale(1.01);
+
+  & .album__btn__delete {
+    visibility: visible;
+  }
+}

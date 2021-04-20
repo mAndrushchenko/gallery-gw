@@ -1,0 +1,32 @@
+.list__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  padding: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto-fill, 250px);
+  grid-row-gap: .5em;
+  grid-column-gap: 1em;
+}
+
+.list__footer {
+  min-height: 200px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

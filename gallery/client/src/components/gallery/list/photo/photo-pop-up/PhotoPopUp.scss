@@ -1,0 +1,33 @@
+@import "../../../../../index";
+
+.pop_up__photo__delete {
+  color: $white;
+  background-color: $Colour-CC-3-rgba;
+  position: fixed;
+  max-height: 160px;
+  max-width: 440px;
+  display: flex;
+  padding: 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: calc(50% - 360px / 2);
+  top: calc(50% - 100px / 2);
+  z-index: 10;
+  box-shadow: 0 0 5px $Colour-CC-2-rgba;
+  border-radius: 5px;
+}
+
+.pop_up__photo__btn__group {
+  text-align: center;
+  margin: 10px;
+  width: 100%;
+
+  & button {
+    width: 40%;
+  }
+
+  & button:first-child {
+    margin-right: 10px;
+  }
+}

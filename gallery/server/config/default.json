@@ -1,0 +1,5 @@
+{
+  "port": 8000,
+  "jwtSecret": "3dd92c1d2a64c37b49a5b2f3ce96f3e8a4db2e48f1bac43e23b85b03fe1bb934a2fc43ecbe6aa9ae0f738d11740a5ece303d8bcb75ec4b7bbf504f5eafe3c171",
+  "mongoUri": "mongodb+srv://mikhail:13245768@cluster0.y3r32.mongodb.net/gallery?retryWrites=true&w=majority"
+}

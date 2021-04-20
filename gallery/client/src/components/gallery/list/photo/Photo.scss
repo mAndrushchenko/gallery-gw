@@ -1,0 +1,105 @@
+@import "../../../../index";
+
+.photo__container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-height: 250px;
+  box-shadow: 1px 1px 5px $Colour-CC-1-rgba;
+}
+
+
+.photo {
+  cursor: pointer;
+  position: relative;
+  max-width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  transition: $fast;
+}
+
+.photo__left_side__checkbox {
+  visibility: hidden;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 2px;
+
+  & input {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+.photo__checkbox__active {
+  background-color: $Colour-CC-1-opacity;
+  box-shadow: 2px 4px 10px $Colour-CC-1-rgba;
+  transform: scale(1.01);
+
+  & .photo__left_side__checkbox {
+    visibility: visible;
+  }
+}
+
+
+.photo__image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+
+  & img {
+    z-index: 0;
+    max-width: 100%;
+    max-height: 250px;
+  }
+}
+
+.photo__info {
+  text-align: center;
+  color: $white;
+  padding: 2px 5px 0 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  width: 90px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.photo__right_side__description {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  position: absolute;
+  right: 0;
+  height: 100%;
+
+  & .photo__btn__delete {
+    visibility: hidden;
+  }
+}
+
+.photo__container:hover {
+  box-shadow: 2px 4px 10px $Colour-CC-1-rgba;
+  transform: scale(1.01);
+
+  & .photo__left_side__checkbox {
+    visibility: visible;
+  }
+
+  & .photo__right_side__description {
+    visibility: visible;
+  }
+}
+
+.photo__right_side__description:hover {
+  & .photo__btn__delete {
+    visibility: visible;
+  }
+}

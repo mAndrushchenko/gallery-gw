@@ -1,0 +1,26 @@
+@import "../../../index";
+
+
+.registration__card {
+  background-color: $Colour-CC-3-rgba !important;
+  color: $white;
+  box-shadow: 1px 1px 30px $Colour-CC-1-rgba;
+}
+
+.registration__card__header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.registration__card__body {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn__card__login {
+  font-size: 20px !important;
+  width: 100%;
+}

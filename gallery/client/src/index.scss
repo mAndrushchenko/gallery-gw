@@ -1,0 +1,49 @@
+* html body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+
+$Colour-CC-1-rgba: rgba(20,28,40, 1);
+$Colour-CC-1-opacity: rgba(20,28,40, 0.4);
+$Colour-CC-2-rgba: rgba(35,47,63, 1);
+$Colour-CC-3-rgba: rgba(72,98,114, 1);
+$Colour-CC-4-rgba: rgba(114,137,142, 1);
+$Colour-CC-5-rgba: rgba(186,212,216, 1);
+
+$white: rgba(255, 255, 255, 1);
+
+.fs20 {
+  font-size: 20px !important;;
+}
+
+.fs40 {
+  font-size: 40px !important;
+}
+
+.fs60 {
+  font-size: 60px !important;;
+}
+
+$fast: 100ms;
+$middle: 200ms;
+
+
+body {
+  height: auto;
+  background-color: $Colour-CC-5-rgba;
+}
+
+.form__message__error {
+  text-align: justify;
+  color: $white;
+  margin: 5px 0 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(139, 0, 0, 0.5);
+}
